@@ -1,5 +1,13 @@
 h1 {
+	height : 200px;
 	color : red;
+	text-align : center;
+	transition-duration: 0.5s;
+	transition-delay: 0.1s
+}
+
+h1:hover {
+	filter: blur(2px);
 }
 
 body {
@@ -8,8 +16,34 @@ body {
 	background-attachment : scroll;
 	background-size: cover;
 	color:white;
+	font-size: 20;
 }
 
 html {
 	font-family: "Gill Sans", sans-serif;
 }
+
+.Titleline {
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+	text-align: center;
+}
+
+.panel_left, .panel_right {
+	float: left;
+	width: 700px;
+}
+
+.panel_center {
+	float: left;
+	width: 500px;
+}
+
+
+/* .background {
+	background-image : url("https://basteque.github.io/image/Temple.png");
+	background-repeat : no-repeat;
+	background-attachment : scroll;
+	background-size: cover;
+	z-index: -100;
+} */
