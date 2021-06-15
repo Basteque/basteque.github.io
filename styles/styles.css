@@ -23,20 +23,32 @@ html {
 	font-family: "Gill Sans", sans-serif;
 }
 
-.Titleline {
+a:link,a:visited {
     /* margin-left: auto; */
     /* margin-right: auto; */
-	text-align: center;
+	color: white;
 }
 
-.panel_left, .panel_right {
+.panel_right {
 	float: left;
-	width: 700px;
+	width: 35%;
+	text-align: left;
+}
+
+/* a:visited { */
+	/* color:white; */
+/* } */
+
+.panel_left {
+	float: left;
+	width: 33%;
+	text-align: right;
 }
 
 .panel_center {
 	float: left;
-	width: 500px;
+	width: 32%;
+	text-align: center;
 }
 
 
@@ -47,3 +59,8 @@ html {
 	background-size: cover;
 	z-index: -100;
 } */
+
+footer {
+	text-align: center;
+	position: absolute;
+}
