@@ -55,27 +55,32 @@ a:link,a:visited {
 }
 
 .grille {
-	display: grid;
-	grid-template: 100% / 1fr 1fr 1fr;
-	border: solid orange;
+	display: flex;
+	flex-flow: row wrap;
+	/* grid-template: 100% / 1fr 1fr 1fr; */
+	/* border: solid orange; */
 }
 
 .photo1 {
-	grid-column: 1;
-	background-image : url("https://basteque.github.io/image/arche.png");
-	background-size: cover;
-	background-position: center;
+	/* grid-column: 1; */
+	/* order:1; */
+	/* background-image : url("https://basteque.github.io/image/arche.png"); */
+	/* background-size: cover; */
+	/* background-position: center; */
 }
 
 .video {
-	grid-column: 2;
+	/* grid-column: 2; */
+	/* order:2; */
+	width: 33%;
 }
 
 .photo2 {
-	grid-column: 3;
-	background-image : url("https://basteque.github.io/image/Voiture.png");
-	background-size: cover;
-	background-position: center;
+	/* grid-column: 3; */
+	/* order:3; */
+	/* background-image : url("https://basteque.github.io/image/Voiture.png"); */
+	/* background-size: cover; */
+	/* background-position: center; */
 }
 
 /* .background {
