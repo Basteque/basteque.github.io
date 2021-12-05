@@ -38,13 +38,13 @@ h1 {
 	flex-flow: column nowrap;
 	justify-content: space-evenly;
 	/* align-items: center; */
-	min-height: 95vh;
+	max-height: 100vh;
 	background-color: black;
 }
 
 .flexy div {
-	min-width: 33%;
-	min-height: 100%;
+	/* min-width: 33%; */
+	/* min-height: 100%; */
 	margin: 0 0 0 0;
 	text-align: center;
 }
@@ -93,22 +93,22 @@ h1 {
 	background-position: center 30%;
 }
 
-body {
-	/* font-size: 20; */
+html, body {
+    max-width: 100%;
+	max-height: 100%;
+    overflow-x: hidden;
+	/* overflow-y: hidden; */
 	margin: 0 0 0 0;
 }
 
-html {
-	font-family: "Gill Sans", sans-serif;
-	z-index: -1;
-	height:100%;
-	margin:0 0 0 0;
-}
-
 footer p{
+	position: absolute;
+	bottom: 1%;
+	left: 50vh;
+	right: 50vh;
 	text-align: center;
 	color: whitesmoke;
-	background-color: black;
+	/* background-color: black; */
 	margin-top: 0;
 	margin-bottom: 0;
 }
