@@ -1,21 +1,41 @@
 h1 {
-	color : rgb(0, 0, 0);
+	display:inline-block;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+	color : whitesmoke;
 	text-align : center;
+	transition-duration: 0.5s;
+	transition-delay: 0.1s;
+	font-family: 'Staatliches', cursive;
+	font-size: 10em;
+	z-index: 2;
+}
+
+.flexy div:hover {
+	filter: blur(3px);
+	transform: scale(1.05);
+	/* background-size: cover; */
 	transition-duration: 0.5s;
 	transition-delay: 0.1s;
 }
 
-.flexy div:hover {
-	filter: blur(5px);
-	background-size: cover;
-	transition-duration: 0.5s;
+.flexy div:not(:hover) {
+	transition-duration: 0.3s;
 	transition-delay: 0.1s;
 }
+
+
+/* .flexy div h1:not(:hover) {
+	filter: blur(5px);
+	transition-duration: 0.5s;
+	transition-delay: 0.1s;
+} */
 
 .flexy {
 	display: flex;
 	/* align-content: center; */
-	flex-flow: row nowrap;
+	flex-flow: column nowrap;
 	justify-content: space-evenly;
 	/* align-items: center; */
 	min-height: 95vh;
@@ -26,6 +46,7 @@ h1 {
 	min-width: 33%;
 	min-height: 100%;
 	margin: 0 0 0 0;
+	text-align: center;
 }
 
 .flex div h1 {
@@ -33,26 +54,47 @@ h1 {
 	top: 50%;
 }
 
+/* .flexy div img {
+	position: relative;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	width: 100%;
+	height: 33%;
+} */
+
 .Left {
 	background-image: url("../image/Temple.png");
+	/* position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1; */
 	background-size: cover;
-	background-position-x: center;
+	background-position: center 80%;
 }
 
 .Center {
 	background-image: url("../image/arche.png");
+	/* position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1; */
 	background-size: cover;
-	background-position-x: center;
+	background-position: center center;
 }
 
 .Right {
 	background-image: url("../image/Voiture.png");
+	/* position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1; */
 	background-size: cover;
-	background-position-x: center;
+	background-position: center 30%;
 }
 
 body {
-	font-size: 20;
+	/* font-size: 20; */
 	margin: 0 0 0 0;
 }
 
@@ -60,9 +102,13 @@ html {
 	font-family: "Gill Sans", sans-serif;
 	z-index: -1;
 	height:100%;
+	margin:0 0 0 0;
 }
 
-footer {
+footer p{
 	text-align: center;
-	position: absolute;
+	color: whitesmoke;
+	background-color: black;
+	margin-top: 0;
+	margin-bottom: 0;
 }
