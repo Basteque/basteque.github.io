@@ -64,7 +64,7 @@ h1 {
 } */
 
 .Left {
-	background-image: url("https://basilem.me/image/Temple.png");
+	background-image: url("../image/Temple.png");
 	/* position: absolute;
 	left: 0;
 	top: 0;
@@ -75,7 +75,7 @@ h1 {
 }
 
 .Center {
-	background-image: url("https://basilem.me/image/arche.png");
+	background-image: url("../image/arche.png");
 	/* position: absolute;
 	left: 0;
 	top: 0;
@@ -86,7 +86,7 @@ h1 {
 }
 
 .Right {
-	background-image: url("https://basilem.me/image/Voiture.png");
+	background-image: url("../image/Voiture.png");
 	/* position: absolute;
 	left: 0;
 	top: 0;
